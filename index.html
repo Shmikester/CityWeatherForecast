@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Forecast</title>
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
+</head>
+
+<body>
+    <section id="headerSection">
+        <h1>Weather Dashboard</h1>
+    </section>
+    <div class="row">
+        <section id="citySection" class="col-3">
+            <div>
+                <h2>Search for a City</h2>
+                    <input type="text" id="citySearch" placeholder="Enter City Name"/>
+                <ul id="previousSearchResults"></ul>
+            </div>
+        </section>
+        <section id="weatherSection" class="col-9">
+            <section id="weatherTodaySection" class="row"></section>
+            <h3 class="row">5-Day Forecast:</h3>
+            <section id="forecastSection" class="row"></section>
+        </section>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <!-- used for city search -->
+    <script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAoe4eRIVCMKOzBIoL-f1UI_h8Ey3ZLMok&libraries=places&callback=initAutoComplete">
+        </script>
+    <script src="./assets/js/script.js"></script>
+    <script src="./assets/js/citySearch.js"></script>
+    <script src="./assets/js/weather.js"></script>
+</body>
+
+</html>
